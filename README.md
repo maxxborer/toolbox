@@ -1,75 +1,46 @@
-# Nuxt Minimal Starter
+# Remix & HeroUI Template
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
 
-## Setup
+## Technologies Used
 
-Make sure to install dependencies:
+- [Remix 2](https://remix.run/docs/en/main/start/quickstart)
+- [HeroUI v2](https://heroui.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind Variants](https://tailwind-variants.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+## How to Use
+
+### Use the template with create-remix
+
+To create a new project based on this template using `create-remix`, run the following command:
 
 ```bash
-# npm
+npx create-next-app -e https://github.com/heroui-inc/remix-template.git
+```
+
+### Install dependencies
+
+You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Run the development server
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+### Setup pnpm (optional)
 
-Build the application for production:
+If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+public-hoist-pattern[]=*@heroui/*
 ```
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
